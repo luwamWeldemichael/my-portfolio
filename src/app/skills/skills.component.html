@@ -7,16 +7,16 @@
     <div class="container d-flex justify-content-end">
       <button class="btn btn-primary" (click)="downloadResume()"> <i class="fa-solid fa-download"></i> Download Resume</button>
     </div>
-    <div class="row">
-      <div class="col-lg-6" data-aos="fade-up">
+<!--    <div class="row">-->
+<!--      <div class="col-lg-6" data-aos="fade-up">-->
 
-        <div class="resume-item pb-0 skill">
-          <ul>
+        <div class="resume-item pb-0 skill" >
+          <ul id="skill-list">
             <li *ngFor="let skill of skills" [innerHTML]="skill" style="list-style-type: none"></li>
           </ul>
         </div>
       </div>
-    </div>
-  </div>
+<!--    </div>-->
+<!--  </div>-->
 </section>
 

@@ -1,18 +1,18 @@
 import {Component, OnInit} from '@angular/core';
-import {Education, Experience, ResumeService, Summary} from "../services/resume.service";
+import {Education, Experience, PortfolioService, Summary} from "../services/portfolio.service";
 
 @Component({
-  selector: 'app-resume',
-  templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss']
+  selector: 'app-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.scss']
 })
-export class ResumeComponent implements OnInit {
+export class SkillsComponent implements OnInit {
   summary!:Summary;
   education!: Education[];
   experience!: Experience[];
   skills!:string[];
 
-  constructor(private resumeService: ResumeService) {
+  constructor(private resumeService: PortfolioService) {
   }
 
   ngOnInit() {
