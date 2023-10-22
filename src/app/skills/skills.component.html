@@ -1,0 +1,22 @@
+<section id="resume" class="resume">
+  <div class="container">
+
+    <div class="section-title">
+      <h2 >Skills</h2>
+    </div>
+    <div class="container d-flex justify-content-end">
+      <button class="btn btn-primary" (click)="downloadResume()"> <i class="fa-solid fa-download"></i> Download Resume</button>
+    </div>
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-up">
+
+        <div class="resume-item pb-0 skill">
+          <ul>
+            <li *ngFor="let skill of skills" [innerHTML]="skill" style="list-style-type: none"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
