@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Education, Experience, PortfolioService, Summary} from "../services/portfolio.service";
+import {Education, Experience, PortfolioService, Summary} from "../../services/portfolio.service";
 
 @Component({
   selector: 'app-skills',
@@ -12,14 +12,14 @@ export class SkillsComponent implements OnInit {
   experience!: Experience[];
   skills!:string[];
 
-  constructor(private resumeService: PortfolioService) {
+  constructor(private portfolioService: PortfolioService) {
   }
 
   ngOnInit() {
-    this.summary = this.resumeService.getSummary();
-    this.education = this.resumeService.getEducation();
-    this.experience = this.resumeService.getExperience();
-    this.skills = this.resumeService.getSkills();
+    this.summary = this.portfolioService.getSummary();
+    this.education = this.portfolioService.getEducation();
+    this.experience = this.portfolioService.getExperience();
+    this.skills = this.portfolioService.getSkills();
   }
 
   downloadResume() {

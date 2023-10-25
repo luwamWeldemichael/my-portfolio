@@ -1,0 +1,89 @@
+<section id="contact" class="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>I'm excited to connect with you and discuss potential job opportunities, or any questions you might have.
+        Feel free to reach out: </p>
+    </div>
+
+    <div class="row" data-aos="fade-in">
+
+      <div class="col-lg-5 d-flex align-items-stretch">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>{{summary.address}}</p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>{{summary.email}}</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-telephone"></i>
+            <h4>Call:</h4>
+            <p>{{summary.phoneNumber}}</p>
+          </div>
+          <img src="../../../assets/img/icon2.avif">
+        </div>
+      </div>
+
+      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <form [formGroup]="contactAsForm">
+          <div id="successBanner" *ngIf="emailSent">
+            <i class="fa-solid fa-thumbs-up fa-bounce fa-2xl"></i>&nbsp;
+            <span id="bannerMessage"> Your message is successfully sent, Thank you!</span>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" class="form-control" id="name" formControlName="name">
+              <p class="error"
+                 *ngIf="contactAsForm?.get('name')?.hasError('required') && contactAsForm?.get('name')?.touched">Name is
+                required</p>
+            </div>
+            <div class="form-group">
+              <label for="name">Email</label>
+              <input type="email" class="form-control" name="email" id="email" formControlName="email">
+              <p class="error"
+                 *ngIf="contactAsForm?.get('email')?.hasError('required') && contactAsForm?.get('email')?.touched">Email
+                is required</p>
+              <p class="error"
+                 *ngIf="contactAsForm?.get('email')?.hasError('email') && contactAsForm?.get('email')?.touched">Invalid
+                Email Format</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="phone">Phone (Optional)</label>
+              <input type="number" class="form-control" name="phone" id="phone" formControlName="phone">
+            </div>
+            <div class="form-group">
+              <label for="name">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" formControlName="subject">
+              <p class="error"
+                 *ngIf="contactAsForm?.get('subject')?.hasError('required') && contactAsForm?.get('subject')?.touched">
+                Subject is required</p>
+            </div>
+          </div>
+          <br/>
+          <div class="form-group">
+            <label for="name"> Message</label>
+            <textarea class="form-control" name="message" rows="10" formControlName="message"></textarea>
+            <p class="error"
+               *ngIf="contactAsForm?.get('message')?.hasError('required') && contactAsForm?.get('message')?.touched">You
+              need to provide a message</p>
+          </div>
+          <button [ngClass]="isFormDisabled()?'gray': ''"
+                  type="submit" class="btn btn-outline-primary btn-block" (click)="handleMessage()"
+                  style="margin-top: 10px" [disabled]="isFormDisabled()">Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

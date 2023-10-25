@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Experience, PortfolioService} from "../services/portfolio.service";
+import {Experience, PortfolioService} from "../../services/portfolio.service";
 
 @Component({
   selector: 'app-experience',

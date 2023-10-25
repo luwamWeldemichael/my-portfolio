@@ -3,15 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { SkillsComponent } from './skills/skills.component';
-import {ContactComponent} from "./contact/contact.component";
-import { ExperienceComponent } from './experience/experience.component';
-import { EducationComponent } from './education/education.component';
-import { BlogComponent } from './blog/blog.component';
+import { AboutComponent } from './components/about/about.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import {ContactComponent} from "./components/contact/contact.component";
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
+import { BlogComponent } from './components/blog/blog.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {ReactiveFormsModule} from "@angular/forms";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

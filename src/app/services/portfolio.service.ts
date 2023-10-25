@@ -81,9 +81,15 @@ const experience: Experience[] = [
     company: "MVP APPLICATION & GAME DESIGN, Abu Dhabi, United Arab Emirates",
     contributions: [
       "Worked closely with teams, handling all project phases using Agile development methodology performing daily stand-ups, weekly iteration planning meetings (IPM), and retro/techtro meetings.",
-      "Used JIRA as an agile project management tool for real-time collaboration with the team and prioritizing the backlogs.",
+      "Managed project workflows using JIRA ensuring backlog completion within sprint" +
+      "timelines and with high quality outcomes.",
       "Developed fully responsive microservice applications using React, Spring Boot, REST, Messaging (Kafka), RestTemplate, Feign Client, Eureka Server, and Integration of modules with Version Control and CI/CD tools.",
-      "Analyzed and optimized existing features and applications, performing coding, testing, and documentation."
+      "Analyzed and optimized existing features and applications, performing coding, testing, and documentation.",
+      "Played a pivotal role in the design and development of scalable and resilient systems, resulting in a 20% reduction in system response times and contributing to a higher uptime rate, ensuring minimal service interruptions for end-users.",
+      "Developed responsive microservice applications using Angular, Spring Boot," +
+      "Kafka, Kafka Streaming, RestTemplate, Feign Client, Eureka Server, Integration of" +
+      "modules with Version Control and CI/CD tools and Mongo DB and MySQL" +
+      "databases, which enhanced system stability and performance."
     ]
   },
 ]

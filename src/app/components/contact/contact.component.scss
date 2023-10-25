@@ -1,0 +1,38 @@
+#contact {
+  margin-left: 250px;
+}
+
+img {
+  width: 320px;
+  height: auto;
+}
+
+.error {
+  color: red;
+}
+
+.gray {
+  color: gray;
+  border-color: gray;
+}
+
+#successBanner {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+}
+
+#successBanner i {
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+#bannerMessage {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+
