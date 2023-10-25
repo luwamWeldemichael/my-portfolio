@@ -1,6 +1,6 @@
 # MyPortfolio
 
-My portfolio (https:luwamweldemichael.com) is a dynamic web application built using Angular for the frontend and AWS services for the backend.
+My portfolio [(https:luwamweldemichael.com)] is a dynamic web application built using Angular for the frontend and AWS services for the backend.
 
 ## My Daily TAsk
 - Managed a Git repository to initialize an Angular project.
